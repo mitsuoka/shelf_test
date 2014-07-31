@@ -1,0 +1,6 @@
+name: shelf_test
+description: A sample web application
+dependencies:
+  shelf: any
+  shelf_route: 0.6.0
+  shelf_static: any
