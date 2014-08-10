@@ -1,6 +1,6 @@
 /**
  * Very simple sample handler
- * Access this server like: http://localhost:8080/
+ * Access this server like: http://localhost:8080/test
  * July, 2014 : first version
  */
 

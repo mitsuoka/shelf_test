@@ -4,7 +4,6 @@
  * 'http://localhost:8080/bookstore/map/tokyo?detail=false'
  * Path parameters and query parameters will be set in the context as:
  *   shelf_path.parameters : {category: map, area: tokyo, detail: false}
-
  * July, 2014 : first version
  */
 
