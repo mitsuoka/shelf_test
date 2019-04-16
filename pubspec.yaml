@@ -1,6 +1,9 @@
 name: shelf_test
-description: A sample web application
+description: Sample shelf middlewares and handlers
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
+
 dependencies:
   shelf: any
-  shelf_route: 0.7.1
   shelf_static: any

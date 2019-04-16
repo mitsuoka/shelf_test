@@ -1,5 +1,7 @@
-**shelf\_test** is a set of sample servers for development of
-server applications utilizing [shelf web server middleware](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/shelf/shelf)
+﻿# shelf_test
+
+**shelf\_test** is a set of **Dart 2 compliant** sample servers for development of
+server applications utilizing [shelf web server middleware](https://pub.dartlang.org/packages/shelf)
 pub package.
 
 This repository consists of following server codes.
@@ -11,28 +13,15 @@ This repository consists of following server codes.
 This server has prompt page and favicon image handling capability.
  Access this server from Chrome using : http://localhost:8080/
 
-- **bin/middleware\_sample\_1.dart** : Sample middleware code showing how to hand modified request to the innerHandler. 
+- **bin/middleware\_sample\_1.dart** : Sample middleware code showing how to hand modified request to the innerHandler.
  Access this server from Chrome using : http://localhost:8080/test
 
 - **bin/middleware\_sample\_2.dart** : Sample middleware code that returns response directly.
-opening with 'http://localhost:8080/middleware' will cause direct return.
-
+Opening with 'http://localhost:8080/middleware' will cause direct return.
 - **bin/middleware\_sample\_3.dart** : Sample middleware code showing how to modify the response from the innerHandler.
 Call this server like 'http://localhost:8080/123'.
 
-- **bin/shelf\_route\_sample\_1.dart** : Simple server code utilizing shelf\_route middleware.
-Access the server using :  'http://localhost:8080/bookstore/map/tokyo?detail=false'.
-Path parameters and query parameters will be set in the context as:   
-shelf_path.parameters : {category: map, area: tokyo, detail: false}
-
-- **bin/shelf\_route\_sample\_2.dart** : Simple sample application that utilizes shelf\_route middleware. userId path parameter is used to maintain the user session.
-Access this server like:
- *  http://localhost:8080/route (log-in page of the service)
- *  http://localhost:8080/favicon.ico (favicon)
- *  http://localhost:8080/images/DartLogo.jpg (static files)
-
-このサンプルは[「プログラミング言語Dartの基礎」]((http://www.cresc.co.jp/tech/java/Google_Dart/DartLanguageGuide.pdf))の 添付資料です。詳細は「ミドルウエア・フレームワーク (shelf)」の章をご覧ください。
-These samples are attachments to the [Dart Language Guide](http://www.cresc.co.jp/tech/java/Google_Dart/DartLanguageGuide.pdf) written in Japanese.
+このサンプルは「プログラミング言語Dartの基礎」の 添付資料です。詳細は「ミドルウエア・フレームワーク (shelf)」の章をご覧ください。・These samples are attachments to the [Dart Language Guide](http://www.cresc.co.jp/tech/java/Google_Dart/DartLanguageGuide.pdf) written in Japanese.
 
 ### Installing ###
 
@@ -46,5 +35,4 @@ These samples are attachments to the [Dart Language Guide](http://www.cresc.co.j
 
 
 ### License ###
-These samples are licensed under [MIT License][MIT].
-[MIT]: http://www.opensource.org/licenses/mit-license.php
+These samples are licensed under [MIT License](mit-license.php).
