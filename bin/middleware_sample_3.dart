@@ -21,16 +21,8 @@ shelf.Response simpleHandler(shelf.Request request) {
  * Middleware to modify incoming request and hands it to the innerHandler.
  * Returns new Future<shelf.Response> object.
  */
-shelf.Middleware myMiddleware() {
-  return (shelf.Handler innerHandler) {
-    return (shelf.Request request) {
-      return new Future.sync(() => innerHandler(request))
-          .then((shelf.Response response) {
-        return modifyResponse(response);
-      });
-    };
-  };
-}
+shelf.Middleware myMiddleware =
+    shelf.createMiddleware(responseHandler: modifyResponse);
 
 /**
  * Small function that modifies an outgoing response.
@@ -47,7 +39,7 @@ Future<shelf.Response> modifyResponse(shelf.Response response) async {
  * Compose a set of Middleware and a Handler.
  */
 var myHandler = const shelf.Pipeline()
-    .addMiddleware(myMiddleware())
+    .addMiddleware(myMiddleware)
     .addHandler(simpleHandler);
 
 /**
