@@ -21,17 +21,20 @@ Opening with 'http://localhost:8080/middleware' will cause direct return.
 - **bin/middleware\_sample\_3.dart** : Sample middleware code showing how to modify the response from the innerHandler.
 Call this server like 'http://localhost:8080/123'.
 
-このサンプルは「プログラミング言語Dartの基礎」の 添付資料です。詳細は「ミドルウエア・フレームワーク (shelf)」の章をご覧ください。・These samples are attachments to the [Dart Language Guide](http://www.cresc.co.jp/tech/java/Google_Dart/DartLanguageGuide.pdf) written in Japanese.
+このサンプルは「プログラミング言語Dartの基礎」の 添付資料です。詳細は「ミドルウエア・フレームワーク (shelf)」の章をご覧ください。
+
+These samples are attachments to the [Dart Language Guide](http://www.cresc.co.jp/tech/java/Google_Dart/DartLanguageGuide.pdf) written in Japanese.
 
 ### Installing ###
 
 1. Download this repository, uncompress and rename the folder to **shelf\_test**.
-2. From Dart Editor, File > Open Existion Folder and select this  **shelf\_test** folder.
+2. From IDE, File > Open Folder and select this  **shelf\_test** folder.
 
 ### Try it ###
 
 1. Run one of above servers.
 2. Access the server from your browser following to instructions.
+3. Tested on Windows.
 
 
 ### License ###
